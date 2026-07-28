@@ -1,0 +1,92 @@
+/* AULA 01- SELETORES E CORES */
+/*
+O seletor universal é representado por *.
+Ele seleciona todos os elementos da página
+*/
+
+*{
+    /*
+    Aplica a todos os elementos uma forma de cálculo em que 
+    po padding e a borda cabem dentro do tamanho define.
+*/
+    box-sizing:border-box;
+}
+/* body é um seletor de tg */
+body {
+    /* O valor 0 remove a margem automática colocada pelo navegador. */
+    margin: 0;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+/* Uma classe começa com ponto no CSS */
+.limite-conteudo{
+    /* Ocupa 90% da largura disponivel */
+width: 90%;
+/*LIMITE A A  */
+max-width: 1120px;
+margin: 0 auto;
+}
+/* UM ID COMEÇA COM # NO CSS */
+ #titulo-Principal{
+    color: white;
+ }
+
+ /* A VIRGULA PERMITE SELECIONAR VÁRIOS ELEMENTOS */
+ h1,
+ h2,
+ h3{
+    color: f0fdf4;
+ }
+  P{
+    color: #475569;
+  }
+
+  .destaque{
+    background-color: #f0fdf4;
+  }
+
+  #titulo-especial{
+    color: #b91c1c;
+  }
+
+  .cabecalho{
+    background-color: #1d4ed8;
+    color: white;
+  }
+
+  .cabecalho p{
+    color: white;
+  }
+
+  .menu{
+    background-color: #0f172a;
+  }
+
+  .menu a{
+color: white;
+  }
+
+  .secao{
+    background-color: white;
+  }
+
+  .cartao{
+    background-color: #f8fafc;
+  }
+
+  .cartao-tag{
+background-color: #eff6ff;
+border-color: #bfdbfe;
+  }
+
+  .cartao-classe{
+    background-color: #f0fdf4;
+    border-color: #bbf7d0;
+  }
+
+  .cartao-id{
+    background-color: #fef2f2;
+    border-color: #fecaca;
+  }
+
+  
