@@ -4,89 +4,222 @@ O seletor universal é representado por *.
 Ele seleciona todos os elementos da página
 */
 
-*{
-    /*
+* {
+  /*
     Aplica a todos os elementos uma forma de cálculo em que 
     po padding e a borda cabem dentro do tamanho define.
 */
-    box-sizing:border-box;
+  box-sizing: border-box;
 }
+
 /* body é um seletor de tg */
 body {
-    /* O valor 0 remove a margem automática colocada pelo navegador. */
-    margin: 0;
-    background-color: #f1f5f9;
-    color: #1e293b;
+  /* O valor 0 remove a margem automática colocada pelo navegador. */
+  margin: 0;
+  background-color: #f1f5f9;
+  color: #1e293b;
 }
+
 /* Uma classe começa com ponto no CSS */
-.limite-conteudo{
-    /* Ocupa 90% da largura disponivel */
-width: 90%;
-/*LIMITE A A  */
-max-width: 1120px;
-margin: 0 auto;
+.limite-conteudo {
+  /* Ocupa 90% da largura disponivel */
+  width: 90%;
+  /*LIMITE A A  */
+  max-width: 1120px;
+  margin: 0 auto;
 }
+
 /* UM ID COMEÇA COM # NO CSS */
- #titulo-Principal{
-    color: white;
- }
+#titulo-Principal {
+  color: white;
+}
 
- /* A VIRGULA PERMITE SELECIONAR VÁRIOS ELEMENTOS */
- h1,
- h2,
- h3{
-    color: f0fdf4;
- }
-  P{
-    color: #475569;
-  }
+/* A VIRGULA PERMITE SELECIONAR VÁRIOS ELEMENTOS */
+h1,
+h2,
+h3 {
+  color: f0fdf4;
+}
 
-  .destaque{
-    background-color: #f0fdf4;
-  }
+P {
+  color: #475569;
+}
 
-  #titulo-especial{
-    color: #b91c1c;
-  }
+.destaque {
+  background-color: #f0fdf4;
+}
 
-  .cabecalho{
-    background-color: #1d4ed8;
-    color: white;
-  }
+#titulo-especial {
+  color: #b91c1c;
+}
 
-  .cabecalho p{
-    color: white;
-  }
+.cabecalho {
+  background-color: #1d4ed8;
+  color: white;
+}
 
-  .menu{
-    background-color: #0f172a;
-  }
+.cabecalho p {
+  color: white;
+}
 
-  .menu a{
-color: white;
-  }
+.menu {
+  background-color: #0f172a;
+}
 
-  .secao{
-    background-color: white;
-  }
+.menu a {
+  color: white;
+}
 
-  .cartao{
-    background-color: #f8fafc;
-  }
+.secao {
+  background-color: white;
+}
 
-  .cartao-tag{
-background-color: #eff6ff;
-border-color: #bfdbfe;
-  }
+.cartao {
+  background-color: #f8fafc;
+}
 
-  .cartao-classe{
-    background-color: #f0fdf4;
-    border-color: #bbf7d0;
-  }
+.cartao-tag {
+  background-color: #eff6ff;
+  border-color: #bfdbfe;
+}
 
-  .cartao-id{
-    background-color: #fef2f2;
-    border-color: #fecaca;
-  }
+.cartao-classe {
+  background-color: #f0fdf4;
+  border-color: #bbf7d0;
+}
 
-  
+.cartao-id {
+  background-color: #fef2f2;
+  border-color: #fecaca;
+}
+
+body {
+  /*  Define a família de fontes. */
+  font-family: Arial, Helvetica, sans-serif;
+
+
+  /* Define o espaço entre as linhas. */
+  line-height: 1.6;
+}
+
+.cabecalho {
+  /* Cria uma mistura gradual entre cores. */
+  background: linear-gradient(135deg, #3155c6, #252875);
+
+
+  /* Cria espaço interno em cima e embaixo. */
+  padding: 55px0;
+}
+
+.identificacao {
+  font-size: 14px;
+
+  /* Define a espessura da fonte. */
+  font-weight: 700;
+
+  /* Transforma o texto em letras maiúsculas. */
+  text-transform: uppercase;
+
+  /* Cria espaço entre as letras. */
+  letter-spacing: 3px;
+
+  color: #bfdbfe;
+  margin-bottom: 8px;
+}
+
+#titulo-principal {
+  font-size: 48px;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.subtitulo {
+  font-size: 19px;
+
+  /* Define a transparência do elemento. */
+  opacity: 0.9;
+
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+.titulo-aula span {
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.titulo-aula h2 {
+  font-size: 34px;
+  margin-top: 5px;
+  margin-bottom: 14px;
+}
+
+.introducao-secao {
+ max-width: 760px;
+ font-size: 18px;
+ margin-bottom: 22px;
+}
+
+.texto-tamanho {
+ font-size: 24px;
+}
+ 
+.texto-negrito {
+ font-weight: 700;
+}
+ 
+.texto-italico {
+ font-style: italic;
+}
+ 
+.texto-centralizado {
+ text-align: center;
+}
+
+.texto-maiusculo {
+ text-transform: uppercase;
+}
+ 
+.texto-espacado {
+ letter-spacing: 4px;
+}
+ 
+.texto-leitura {
+ line-height: 2;
+}
+
+.link-exemplo {
+ color:#1d4ed8;
+ font-weight: 700;
+ 
+ /* Remove o sublinhado do link. */
+ text-decoration: none;
+}
+ 
+.link-exemplo:hover {
+ text-decoration: underline;
+}
+
+.bloco-textos {
+ background-color: #f8fafc;
+}
+
+.fundo-cor {
+ background-color: #dbeafe;
+ color:#1e3a8a;
+}
+ 
+.fundo-gradiente {
+ background: linear-gradient(to right, #f97316, #facc15);
+ color:#431407;
+}
+
