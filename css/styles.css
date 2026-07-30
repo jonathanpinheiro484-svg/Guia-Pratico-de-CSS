@@ -1,228 +1,413 @@
-/* AULA 01- SELETORES E CORES */
 /*
-O seletor universal é representado por *.
-Ele seleciona todos os elementos da página
+
+  Estrutura de uma regra CSS:
+ 
+  seletor {
+
+    propriedade: valor;
+
+  }
+ 
+  Exemplo:
+ 
+  p {
+
+    color: blue;
+
+  }
+ 
+  p     = seletor
+
+  color = propriedade
+
+  blue  = valor
+
+*/
+
+/* ===== AULA 01 - SELETORES E CORES ==== */
+
+
+/*
+
+  O seletor universal é representado por *.
+
+  Ele seleciona todos os elementos da página
+
 */
 
 * {
+
   /*
+
     Aplica a todos os elementos uma forma de cálculo em que 
-    po padding e a borda cabem dentro do tamanho define.
-*/
+
+    o padding e a borda cabem dentro do tamanho definido.
+
+  */
+
   box-sizing: border-box;
+
 }
 
-/* body é um seletor de tg */
+/* body é um seletor de tag */
+
 body {
-  /* O valor 0 remove a margem automática colocada pelo navegador. */
+
+  /* O valor 0 remove a margem automática colocada pelo navegador */
+
   margin: 0;
+
+  /* Define a cor de fundo da página */
+
   background-color: #f1f5f9;
+
+  /* Define a cor principal dos textos */
+
   color: #1e293b;
+
 }
 
 /* Uma classe começa com ponto no CSS */
+
 .limite-conteudo {
-  /* Ocupa 90% da largura disponivel */
+
+  /* Ocupa 90% da largura disponível */
+
   width: 90%;
-  /*LIMITE A A  */
+
+  /* Limita a largura máxima do conteúdo */
+
   max-width: 1120px;
+
+  /* Centraliza o elemento horizontalmente */
+
   margin: 0 auto;
+
 }
 
-/* UM ID COMEÇA COM # NO CSS */
-#titulo-Principal {
-  color: white;
-}
+/* A vírgula permite selecionar vários elementos */
 
-/* A VIRGULA PERMITE SELECIONAR VÁRIOS ELEMENTOS */
 h1,
+
 h2,
+
 h3 {
-  color: f0fdf4;
+
+  color: #0f172a;
+
 }
 
-P {
+/* Seleciona todos os parágrafos */
+
+p {
+
   color: #475569;
+
 }
+
+
+/* Seleciona elementos que possuem class="destaque" */
 
 .destaque {
+
   background-color: #f0fdf4;
+
 }
 
+/* Seleciona o elemento que possui id="titulo-especial" */
+
 #titulo-especial {
+
   color: #b91c1c;
+
 }
 
 .cabecalho {
-  background-color: #1d4ed8;
-  color: white;
+
+    padding: 42px 0;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
 }
 
+/* Seleciona os parágrafos que estão dentro do cabeçalho */
+
 .cabecalho p {
+
   color: white;
+
 }
 
 .menu {
+
   background-color: #0f172a;
+
 }
 
 .menu a {
+
   color: white;
+
 }
 
 .secao {
+
   background-color: white;
+
 }
 
 .cartao {
+
   background-color: #f8fafc;
+
 }
 
 .cartao-tag {
+
   background-color: #eff6ff;
+
   border-color: #bfdbfe;
+
 }
 
 .cartao-classe {
+
   background-color: #f0fdf4;
+
   border-color: #bbf7d0;
+
 }
 
 .cartao-id {
+
   background-color: #fef2f2;
+
   border-color: #fecaca;
+
 }
 
+
+/*
+
+  ==================================================
+
+  AULA 02 — TEXTOS, FONTES E FUNDOS
+
+  ==================================================
+
+*/
+
+
 body {
+
   /*  Define a família de fontes. */
+
   font-family: Arial, Helvetica, sans-serif;
 
-
   /* Define o espaço entre as linhas. */
+
   line-height: 1.6;
+
 }
 
 .cabecalho {
+
+  
+  /* Cria uma mistura gradual entre cores. */
+
   /* Cria uma mistura gradual entre cores. */
   background: linear-gradient(135deg, #3155c6, #252875);
-
-
+ 
   /* Cria espaço interno em cima e embaixo. */
-  padding: 55px0;
+  padding: 20px 0;
+  display: flex;
+
 }
 
 .identificacao {
+
   font-size: 14px;
 
   /* Define a espessura da fonte. */
+
   font-weight: 700;
 
   /* Transforma o texto em letras maiúsculas. */
+
   text-transform: uppercase;
 
   /* Cria espaço entre as letras. */
+
   letter-spacing: 3px;
 
   color: #bfdbfe;
+
   margin-bottom: 8px;
+
 }
 
 #titulo-principal {
+
   font-size: 48px;
+
   line-height: 1.1;
+
   margin-top: 0;
+
   margin-bottom: 8px;
+
 }
 
 .subtitulo {
+
   font-size: 19px;
 
   /* Define a transparência do elemento. */
+
   opacity: 0.9;
 
   margin-bottom: 0;
+
 }
 
 h1,
+
 h2,
+
 h3 {
+
   margin-top: 0;
+
 }
 
 .titulo-aula span {
+
   color: #2563eb;
+
   font-size: 14px;
+
   font-weight: 700;
+
   text-transform: uppercase;
+
   letter-spacing: 2px;
+
 }
 
+
 .titulo-aula h2 {
+
   font-size: 34px;
+
   margin-top: 5px;
+
   margin-bottom: 14px;
+
 }
 
 .introducao-secao {
- max-width: 760px;
- font-size: 18px;
- margin-bottom: 22px;
+
+  max-width: 760px;
+
+  font-size: 18px;
+
+  margin-bottom: 22px;
+
 }
 
 .texto-tamanho {
- font-size: 24px;
-}
- 
-.texto-negrito {
- font-weight: 700;
-}
- 
-.texto-italico {
- font-style: italic;
-}
- 
-.texto-centralizado {
- text-align: center;
+
+  font-size: 24px;
+
 }
 
+
+.texto-negrito {
+
+  font-weight: 700;
+
+}
+
+
+.texto-italico {
+
+  font-style: italic;
+
+}
+
+
+.texto-centralizado {
+
+  text-align: center;
+
+}
+
+
 .texto-maiusculo {
- text-transform: uppercase;
+
+  text-transform: uppercase;
+
 }
- 
+
+
 .texto-espacado {
- letter-spacing: 4px;
+
+  letter-spacing: 4px;
+
 }
- 
+
+
 .texto-leitura {
- line-height: 2;
+
+  line-height: 2;
+
 }
 
 .link-exemplo {
- color:#1d4ed8;
- font-weight: 700;
- 
- /* Remove o sublinhado do link. */
- text-decoration: none;
+
+  color: #1d4ed8;
+
+  font-weight: 700;
+
+  /* Remove o sublinhado do link. */
+
+  text-decoration: none;
+
 }
- 
+
+
 .link-exemplo:hover {
- text-decoration: underline;
+
+  text-decoration: underline;
+
 }
+
 
 .bloco-textos {
- background-color: #f8fafc;
+
+  background-color: #f8fafc;
+
 }
 
+
 .fundo-cor {
- background-color: #dbeafe;
- color:#1e3a8a;
+
+  background-color: #dbeafe;
+
+  color: #1e3a8a;
+
 }
- 
+
+
 .fundo-gradiente {
- background: linear-gradient(to right, #f97316, #facc15);
- color:#431407;
+
+  background: linear-gradient(to right, #f97316, #facc15);
+
+  color: #431407;
+
 }
- 
+
 /*
 
   ==================================================
@@ -232,8 +417,8 @@ h3 {
   ==================================================
 
 */
- 
- 
+
+
 main {
 
   padding-top: 36px;
@@ -241,35 +426,35 @@ main {
   padding-bottom: 36px;
 
 }
- 
+
 .secao {
 
   /* Cria espaço do lado de fora. */
 
   margin-bottom: 28px;
- 
+
   /* Cria espaço dentro da seção. */
 
   padding: 36px;
- 
+
   /* Cria a borda da seção. */
 
   border: 1px solid #cbd5e1;
- 
+
   /*  Arredonda os cantos. */
 
   border-radius: 12px;
- 
+
   /* Cria uma sombra. */
 
   box-shadow: 0 5px 18px rgba(15, 23, 42, 0.06);
- 
+
   /* Cria um espaço ao acessar a seção pelo menu. */
 
   scroll-margin-top: 90px;
 
 }
- 
+
 /*
 
   ==================================================
@@ -279,8 +464,8 @@ main {
   ==================================================
 
 */
- 
- 
+
+
 /*  Estiliza a caixa que pode ser aberta e fechada. */
 
 .conteudo-aula {
@@ -294,7 +479,7 @@ main {
   border-radius: 8px;
 
 }
- 
+
 /* summary é a parte clicável do details. */
 
 .conteudo-aula summary {
@@ -304,13 +489,13 @@ main {
   color: #1d4ed8;
 
   font-weight: 700;
- 
+
   /* Exibe o ponteiro em formato de mão.  */
 
   cursor: pointer;
 
 }
- 
+
 /* Seleciona a lista que está dentro do details. */
 
 .conteudo-aula ul {
@@ -320,13 +505,13 @@ main {
   margin-bottom: 18px;
 
   padding-left: 45px;
- 
+
   /* Cria duas colunas na lista.  */
 
   columns: 2;
 
 }
- 
+
 /* Cria espaço abaixo de cada item. */
 
 .conteudo-aula li {
@@ -334,7 +519,7 @@ main {
   margin-bottom: 6px;
 
 }
- 
+
 /* Seleciona o summary quando o details está aberto. */
 
 .conteudo-aula[open] summary {
@@ -344,7 +529,7 @@ main {
   margin-bottom: 16px;
 
 }
- 
+
 .area-cartoes {
 
   display: flex;
@@ -352,7 +537,7 @@ main {
   gap: 24px;
 
 }
- 
+
 .cartao {
 
   flex: 1;
@@ -366,7 +551,7 @@ main {
   border-radius: 10px;
 
 }
- 
+
 .cartao h3 {
 
   font-size: 21px;
@@ -374,7 +559,7 @@ main {
   margin-bottom: 14px;
 
 }
- 
+
 code {
 
   display: inline-block;
@@ -390,7 +575,7 @@ code {
   border-radius: 5px;
 
 }
- 
+
 .bloco-textos {
 
   padding: 28px;
@@ -398,7 +583,7 @@ code {
   border-radius: 10px;
 
 }
- 
+
 .area-fundos {
 
   display: flex;
@@ -408,8 +593,8 @@ code {
   margin-top: 24px;
 
 }
- 
- 
+
+
 .exemplo-fundo {
 
   flex: 1;
@@ -419,8 +604,8 @@ code {
   border-radius: 10px;
 
 }
- 
- 
+
+
 .box-model {
 
   display: flex;
@@ -430,7 +615,7 @@ code {
   margin: 30px 0;
 
 }
- 
+
 .box-margin {
 
   width: 100%;
@@ -444,7 +629,7 @@ code {
   text-align: center;
 
 }
- 
+
 .box-border {
 
   padding: 25px;
@@ -452,7 +637,7 @@ code {
   background-color: #fde68a;
 
 }
- 
+
 .box-padding {
 
   padding: 30px;
@@ -460,7 +645,7 @@ code {
   background-color: #bbf7d0;
 
 }
- 
+
 .box-conteudo {
 
   padding: 30px;
@@ -472,8 +657,8 @@ code {
   font-weight: 700;
 
 }
- 
- 
+
+
 .legenda-box {
 
   display: block;
@@ -487,7 +672,7 @@ code {
   letter-spacing: 1px;
 
 }
- 
+
 .subtitulo-conteudo {
 
   margin-top: 34px;
@@ -495,8 +680,8 @@ code {
   margin-bottom: 18px;
 
 }
- 
- 
+
+
 .comparacao-espacamento {
 
   display: flex;
@@ -504,7 +689,7 @@ code {
   gap: 20px;
 
 }
- 
+
 .caixa-sem-padding,
 
 .caixa-com-padding {
@@ -516,21 +701,21 @@ code {
   border: 3px solid #16a34a;
 
 }
- 
- 
+
+
 .caixa-sem-padding {
 
   padding: 0;
 
 }
- 
- 
+
+
 .caixa-com-padding {
 
   padding: 30px;
 
 }
- 
+
 .cartao-produto {
 
   flex: 1;
@@ -546,7 +731,7 @@ code {
   box-shadow: 0 8px 20px rgba(15, 23, 42, 0.1);
 
 }
- 
+
 .categoria {
 
   color: #2563eb;
@@ -560,8 +745,8 @@ code {
   letter-spacing: 1px;
 
 }
- 
- 
+
+
 .cartao-produto a {
 
   color: #1d4ed8;
@@ -571,5 +756,564 @@ code {
   text-decoration: none;
 
 }
- 
 
+/*
+
+  ==================================================
+
+  AULA 04 — DISPLAY E FLEXBOX
+
+  ==================================================
+
+*/
+
+.menu-conteudo {
+
+  /* Ativa o Flexbox */
+
+  display: flex;
+
+  /* Centraliza os links  */
+
+  justify-content: center;
+
+  /* Cria espaço entre os links */
+
+  gap: 14px;
+
+  /* Permite rolagem horizontal */
+
+  overflow-x: auto;
+
+}
+
+.menu a {
+
+  display: block;
+
+  padding: 17px 14px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+
+  border-bottom: 3px solid transparent;
+
+}
+
+.elemento-inline {
+
+  display: inline;
+
+  background-color: #fde68a;
+
+}
+
+
+.elemento-block {
+
+  display: block;
+
+  margin: 10px 0;
+
+  padding: 10px;
+
+  background-color: #bfdbfe;
+
+}
+
+
+.elemento-inline-block {
+
+  display: inline-block;
+
+  margin-top: 10px;
+
+  padding: 15px;
+
+  background-color: #fecaca;
+
+}
+
+.exemplo-display {
+
+  padding: 25px;
+
+  background-color: #f8fafc;
+
+  border-radius: 8px;
+
+}
+
+.container-flex {
+
+  display: flex;
+
+  /* Organiza os itens em linha */
+
+  flex-direction: row;
+
+  /* Distribui o espaço entre os itens */
+
+  justify-content: space-between;
+
+  /* Faz os itens acompanharem a altura disponível */
+
+  align-items: stretch;
+
+  /* Permite a quebra para outra linha */
+
+  flex-wrap: wrap;
+
+  gap: 20px;
+
+}
+
+.item-flex {
+
+  /*    Permite que o item cresça */
+
+  flex-grow: 1;
+
+  /* Define o tamanho inicial do item */
+
+  flex-basis: 220px;
+
+  padding: 26px;
+
+  background-color: #eff6ff;
+
+  border: 1px solid #bfdbfe;
+
+  border-radius: 9px;
+
+}
+
+.numero-item {
+
+  color: #2563eb;
+
+  font-size: 30px;
+
+  font-weight: 700;
+
+}
+
+/*
+
+  ==================================================
+
+  AULA 05 — EFEITOS E RESPONSIVIDADE
+
+  ==================================================
+
+*/
+
+
+html {
+
+  /*Cria uma rolagem suave */
+
+  scroll-behavior: smooth;
+
+}
+
+
+.menu {
+
+  /* Mantém o menu no topo da tela */
+
+  position: sticky;
+
+  top: 0;
+
+  /* Coloca o menu na frente dos demais elementos */
+
+  z-index: 10;
+
+}
+
+.menu a {
+
+  transition:
+
+    color 0.3s,
+
+    border-color 0.3s,
+
+    background-color 0.3s;
+
+}
+
+
+.menu a:hover {
+
+  color: #60a5fa;
+
+  border-bottom-color: #3b82f6;
+
+  background-color: #172554;
+
+}
+
+
+.area-botoes {
+
+  display: flex;
+
+  gap: 14px;
+
+}
+
+
+.botao {
+
+  border: none;
+
+  padding: 14px 22px;
+
+  border-radius: 7px;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  /* Exibe uma mão ao passar sobre o botão */
+
+  cursor: pointer;
+
+  transition:
+
+    background-color 0.3s,
+
+    transform 0.3s;
+
+}
+
+
+.botao-principal {
+
+  background-color: #2563eb;
+
+  color: white;
+
+}
+
+
+.botao-secundario {
+
+  background-color: #475569;
+
+  color: white;
+
+}
+
+
+.botao:hover {
+
+  /*  Aumenta o tamanho do botão */
+
+  transform: scale(1.05);
+
+}
+
+
+.botao-principal:hover {
+
+  background-color: #1e40af;
+
+}
+
+
+.botao-secundario:hover {
+
+  background-color: #334155;
+
+}
+
+
+.botao:active {
+
+  /*  Diminui o botão durante o clique  */
+
+  transform: scale(0.95);
+
+}
+
+
+.area-efeitos {
+
+  display: flex;
+
+  gap: 20px;
+
+}
+
+
+.cartao-efeito,
+
+.cartao-opacidade,
+
+.cartao-rotacao {
+
+  flex: 1;
+
+  padding: 26px;
+
+  border-radius: 9px;
+
+}
+
+
+.cartao-efeito {
+
+  background-color: #ede9fe;
+
+  border: 1px solid #c4b5fd;
+
+  transition:
+
+    transform 0.3s,
+
+    box-shadow 0.3s;
+
+}
+
+
+.cartao-efeito:hover {
+
+  /* Move o cartão para cima */
+
+  transform: translateY(-10px);
+
+  box-shadow: 0 12px 25px rgba(15, 23, 42, 0.16);
+
+}
+
+
+.cartao-opacidade {
+
+  background-color: #fee2e2;
+
+  /* Deixa o elemento parcialmente transparente */
+
+  opacity: 0.6;
+
+  transition: opacity 0.3s;
+
+}
+
+
+.cartao-opacidade:hover {
+
+  opacity: 1;
+
+}
+
+
+.cartao-rotacao {
+
+  background-color: #dcfce7;
+
+  transition: transform 0.3s;
+
+}
+
+
+.cartao-rotacao:hover {
+
+  /*  Gira o elemento */
+
+  transform: rotate(2deg);
+
+}
+
+
+.aviso-responsividade {
+
+  margin-top: 30px;
+
+  padding: 25px;
+
+  background-color: #fef9c3;
+
+  border: 2px dashed #ca8a04;
+
+  border-radius: 9px;
+
+}
+
+
+.rodape {
+
+  padding: 30px;
+
+  background-color: #0f172a;
+
+  text-align: center;
+
+}
+
+
+.rodape p {
+
+  color: white;
+
+  margin: 5px 0;
+
+}
+
+
+
+/*
+
+  As regras abaixo serão aplicadas em telas
+
+  com no máximo 760 pixels.
+
+*/
+
+@media (max-width: 760px) {
+
+  #titulo-principal {
+
+    font-size: 36px;
+
+  }
+
+  .cabecalho {
+
+    padding: 42px 0;
+
+  }
+
+  /* Em telas menores, o menu deixa de ficar
+
+    fixo no topo para não ocupar muito espaço */
+
+  .menu {
+
+    position: static;
+
+  }
+
+  /* Organiza os links do menu um abaixo do outro */
+
+  .menu-conteudo {
+
+    width: 100%;
+
+    max-width: none;
+
+    margin: 0;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 0;
+
+    overflow-x: visible;
+
+  }
+
+  /* Cada link passa a ocupar toda a largura do menu */
+
+  .menu a {
+
+    width: 100%;
+
+    padding: 14px 20px;
+
+    text-align: center;
+
+    white-space: normal;
+
+    border-bottom: 1px solid #334155;
+
+  }
+
+  .secao {
+
+    padding: 22px;
+
+  }
+
+  .titulo-aula h2 {
+
+    font-size: 28px;
+
+  }
+
+  /* A lista deixa de ter duas colunas */
+
+  .conteudo-aula ul {
+
+    columns: 1;
+
+  }
+
+  /* Os elementos deixam de ficar lado a lado
+
+    e passam a ficar um abaixo do outro */
+
+  .area-cartoes,
+
+  .area-fundos,
+
+  .comparacao-espacamento,
+
+  .container-flex,
+
+  .area-botoes,
+
+  .area-efeitos {
+
+    flex-direction: column;
+
+  }
+
+  /* Os botões ocupam toda a largura disponível */
+
+  .botao {
+
+    width: 100%;
+
+  }
+
+  .box-margin {
+
+    padding: 18px;
+
+  }
+
+  .box-border {
+
+    padding: 16px;
+
+  }
+
+  .box-padding {
+
+    padding: 18px;
+
+  }
+
+
+  
+
+}
+  .images{
+   width: 100%;
+  max-width: 180px; /* tamanho máximo da logo */
+  margin: 0 auto;
+
+}
+
+.images img {
+  display: block;
+  width: 100%;
+  height: auto; /* mantém a proporção */
+}
